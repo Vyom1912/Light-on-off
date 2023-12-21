@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>Can you turn the light on?</h2>
+      </div>
+      <div class="img">
+        <img src="light-bulb-off.png  " alt="" id="image" />
+      </div>
+      <div class="btn-group">
+        <button class="btn" onclick="myFun0()">light Off</button>
+        <button class="btn" onclick="myFun1()">light on</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFun0() {
+      document.getElementById("image").src = "light-bulb-off.png";
+    }
+    function myFun1() {
+      document.getElementById("image").src = "light-bulb-on.png";
+    }
+  </script>
+</html>
