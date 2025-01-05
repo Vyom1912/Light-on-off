@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="light-bulb-on.png" />
+    <title>light-on/off</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,18 +15,32 @@
       <div class="img">
         <img src="light-bulb-off.png  " alt="" id="image" />
       </div>
-      <div class="btn-group">
+      <!-- <div class="btn-group">
         <button class="btn" onclick="myFun0()">light Off</button>
         <button class="btn" onclick="myFun1()">light on</button>
+      </div> -->
+      <div class="switch">
+        <div class="switch-off active"onclick="myFun0()">OFF</div>
+        <div class="switch-on"onclick="myFun1()">ON</div>
+        <div class="active-block"></div>
       </div>
     </div>
   </body>
   <script>
+    var img= document.getElementById("image")
+    var switchOff = document.getElementsByClassName("switch-off")[0];
+    var switchOn = document.getElementsByClassName("switch-on")[0];
     function myFun0() {
-      document.getElementById("image").src = "light-bulb-off.png";
+      img.src = "light-bulb-off.png";
+      switchOff.classList.add("active");
+      switchOn.classList.remove("active");
     }
     function myFun1() {
-      document.getElementById("image").src = "light-bulb-on.png";
+      img.src = "light-bulb-on.png";
+      switchOff.classList.remove("active");
+      switchOn.classList.add("active");
+      img.style.filter = 'drop-shadow(0 0 50px white)';
+  
     }
   </script>
 </html>
