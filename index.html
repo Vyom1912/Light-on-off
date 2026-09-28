@@ -20,14 +20,14 @@
         <button class="btn" onclick="myFun1()">light on</button>
       </div> -->
       <div class="switch">
-        <div class="switch-off active"onclick="myFun0()">OFF</div>
-        <div class="switch-on"onclick="myFun1()">ON</div>
+        <div class="switch-off active" onclick="myFun0()">OFF</div>
+        <div class="switch-on" onclick="myFun1()">ON</div>
         <div class="active-block"></div>
       </div>
     </div>
   </body>
   <script>
-    var img= document.getElementById("image")
+    var img = document.getElementById("image");
     var switchOff = document.getElementsByClassName("switch-off")[0];
     var switchOn = document.getElementsByClassName("switch-on")[0];
     function myFun0() {
@@ -39,8 +39,7 @@
       img.src = "light-bulb-on.png";
       switchOff.classList.remove("active");
       switchOn.classList.add("active");
-      img.style.filter = 'drop-shadow(0 0 50px white)';
-  
+      img.style.filter = "drop-shadow(0 0 50px white)";
     }
   </script>
 </html>

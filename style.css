@@ -28,23 +28,6 @@ body {
   height: 100%;
   box-shadow: 0 0 10 yellow;
  }
-/*.btn-group {
-  margin: 2rem 0 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.btn {
-  box-shadow: 0 0 5px black;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  background-color: darkseagreen;
-  color: black;
-  font-size: 1rem;
-  font-weight: 600;
-} */
 .switch{
   width: 150px;
   height: 40px;
