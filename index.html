@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,10 +15,7 @@
       <div class="img">
         <img src="light-bulb-off.png  " alt="" id="image" />
       </div>
-      <!-- <div class="btn-group">
-        <button class="btn" onclick="myFun0()">light Off</button>
-        <button class="btn" onclick="myFun1()">light on</button>
-      </div> -->
+
       <div class="switch">
         <div class="switch-off active" onclick="myFun0()">OFF</div>
         <div class="switch-on" onclick="myFun1()">ON</div>
@@ -34,11 +31,13 @@
       img.src = "light-bulb-off.png";
       switchOff.classList.add("active");
       switchOn.classList.remove("active");
+      document.body.classList.remove("light-on");
     }
     function myFun1() {
       img.src = "light-bulb-on.png";
       switchOff.classList.remove("active");
       switchOn.classList.add("active");
+      document.body.classList.add("light-on");
       img.style.filter = "drop-shadow(0 0 50px white)";
     }
   </script>

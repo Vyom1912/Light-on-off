@@ -8,6 +8,10 @@ html {
 }
 body {
   background-color: grey;
+  transition: background-color 0.3s ease;
+}
+body.light-on {
+  background-color: #fff59d;
 }
 .container {
   width: 50%;
@@ -55,13 +59,14 @@ body {
   height: 100%;
   background-color: gold;
   border-radius: 20px;
-  transition: left 0.3s ease;
+  transition: left 0.3s ease, background-color 0.3s ease;
 }
 .switch-off.active ~ .active-block {
   left: 0;
 }
 .switch-on.active ~ .active-block {
   left: 50%;
+  background-color: #fff59d;
 }
 @media only screen and (max-width: 800px){
   .img{
